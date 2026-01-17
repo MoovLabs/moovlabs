@@ -55,7 +55,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ delay: index * 0.1, duration: 0.6 }}
-      className="group relative card-retro p-8 md:p-10 rounded-2xl"
+      className="group relative card-retro p-8 md:p-10 rounded-2xl cursor-pointer"
     >
       {/* Number - Large background */}
       <span className="absolute top-4 right-4 text-[8rem] font-display text-foreground/[0.03] leading-none group-hover:text-primary/10 transition-colors duration-500">
@@ -64,7 +64,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
 
       {/* Icon with retro styling */}
       <div className="relative mb-8">
-        <div className="w-16 h-16 border-2 border-foreground/20 flex items-center justify-center group-hover:border-primary group-hover:bg-primary/10 transition-all duration-300">
+        <div className="w-16 h-16 border-2 border-foreground/20 flex items-center justify-center group-hover:border-primary group-hover:bg-primary/10 transition-all duration-300 rounded-2xl">
           <service.icon className="w-7 h-7 text-foreground group-hover:text-primary transition-colors" />
         </div>
         <div className="absolute -bottom-2 -right-2 w-16 h-16 border-2 border-primary/30 -z-10" />
@@ -86,7 +86,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
         {service.description}
       </p>
 
-      {/* Hover Arrow */}
+      {/* Hover Arrow
       <motion.div
         className="mt-8 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       >
@@ -94,7 +94,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
           En savoir plus
         </span>
         <span className="text-primary">→</span>
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 };

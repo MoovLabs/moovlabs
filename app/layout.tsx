@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: "/icone-moovlabs.png",
-    shortcut: "/icone-moovlabs.png",
-    apple: "/icone-moovlabs.png",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   manifest: '/site.webmanifest',
   title: {

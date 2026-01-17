@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
@@ -6,8 +6,8 @@ import { Menu, X } from "lucide-react";
 import ThemeToggle from "./themeToggle";
 import Logo from "./logo";
 
-
 const navItems = [
+  { label: "Accueil", href: "#home" },
   { label: "Services", href: "#services" },
   { label: "Projets", href: "#work" },
   { label: "À propos", href: "#about" },
@@ -17,34 +17,30 @@ const navItems = [
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("");
+  const [activeSection, setActiveSection] = useState("home"); // par défaut home
 
+  // Détection scroll pour changer le style du header
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Détection section active
   useEffect(() => {
-    const sections = document.querySelectorAll("section[id]");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        rootMargin: "-50% 0px -50% 0px",
-        threshold: 0,
-      }
-    );
+    const handleSection = () => {
+      const sections = document.querySelectorAll("section[id]");
+      let current = "home"; // par défaut si aucune section visible
+      sections.forEach((section) => {
+        const top = section.getBoundingClientRect().top;
+        if (top <= window.innerHeight / 2) current = section.id;
+      });
+      setActiveSection(current);
+    };
 
-    sections.forEach((section) => observer.observe(section));
-    return () => sections.forEach((section) => observer.unobserve(section));
+    window.addEventListener("scroll", handleSection);
+    handleSection(); // update au chargement
+    return () => window.removeEventListener("scroll", handleSection);
   }, []);
 
   return (
@@ -60,8 +56,8 @@ const Navigation = () => {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
           <Logo size="md" />
-          <span className="font-display text-lg sm:text-xl tracking-wide hidden xs:block group-hover:text-primary transition-colors">
-            MOOBLABS
+          <span className="font-display text-lg sm:text-xl tracking-wide hidden sm:block transition-colors group-hover:text-primary">
+            MOOVLABS
           </span>
         </a>
 
@@ -70,7 +66,7 @@ const Navigation = () => {
           {navItems.map((item, index) => {
             const sectionId = item.href.substring(1);
             const isActive = activeSection === sectionId;
-            
+
             return (
               <motion.a
                 key={item.label}
@@ -83,15 +79,17 @@ const Navigation = () => {
                 transition={{ delay: 0.1 * index, duration: 0.4 }}
               >
                 {item.label}
-                <span className={`absolute -bottom-1 left-0 h-[2px] bg-primary transition-all duration-300 ${
-                  isActive ? "w-full" : "w-0 group-hover:w-full"
-                }`} />
+                <span
+                  className={`absolute -bottom-1 left-0 h-[2px] bg-primary transition-all duration-300 ${
+                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                  }`}
+                />
               </motion.a>
             );
           })}
           <div className="w-px h-5 bg-foreground/10" />
           <div className="relative group cursor-pointer">
-            <div className="absolute -inset-2 bg-primary/10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100 " />
+            <div className="absolute -inset-2 bg-primary/10 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 scale-95 group-hover:scale-100" />
             <ThemeToggle />
           </div>
         </div>
@@ -127,7 +125,7 @@ const Navigation = () => {
           {navItems.map((item, index) => {
             const sectionId = item.href.substring(1);
             const isActive = activeSection === sectionId;
-            
+
             return (
               <motion.a
                 key={item.label}
@@ -142,9 +140,11 @@ const Navigation = () => {
               >
                 <span className="relative">
                   {item.label}
-                  <span className={`absolute -bottom-2 left-0 h-[3px] bg-primary transition-all duration-300 ${
-                    isActive ? "w-full" : "w-0 group-hover:w-full"
-                  }`} />
+                  <span
+                    className={`absolute -bottom-2 left-0 h-[3px] bg-primary transition-all duration-300 ${
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  />
                 </span>
               </motion.a>
             );
