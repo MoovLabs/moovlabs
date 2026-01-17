@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
@@ -55,14 +56,21 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
       }`}
     >
       {/* Image */}
-      <div className={`overflow-hidden ${isLarge ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
-        <motion.img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+      <div className={`relative overflow-hidden ${isLarge ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
+        <motion.div
+          className="w-full h-full"
           whileHover={{ scale: 1.08 }}
           transition={{ duration: 0.7 }}
-        />
+        >
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+            sizes={isLarge ? "(max-width: 768px) 100vw, 100vw" : "(max-width: 768px) 100vw, 50vw"}
+            priority={index <= 1}
+          />
+        </motion.div>
       </div>
 
       {/* Overlay */}

@@ -103,17 +103,32 @@ const LeaderCard = ({ leader, index }: { leader: typeof leaders[0]; index: numbe
       transition={{ delay: index * 0.2, duration: 0.6 }}
       className="group relative"
     >
-      <div className="relative overflow-hidden aspect-[3/4] border-2 border-foreground/10 mb-6 group-hover:border-primary transition-colors duration-300">
-        <div className="absolute inset-0 bg-primary/20 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-        <img 
-          src={leader.image} 
-          alt={leader.name}
-          className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
-        />
+      <div className="relative overflow-hidden aspect-[3/4] border-2 border-foreground/10 mb-6 group-hover:border-primary transition-colors duration-300 bg-card">
+        {leader.image ? (
+          <>
+            <div className="absolute inset-0 bg-primary/20 mix-blend-overlay opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+            <Image 
+              src={leader.image} 
+              alt={leader.name}
+              fill
+              className="object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 scale-100 group-hover:scale-105"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+            {/* Force Image component to behave like background but with performance benefits */}
+          </>
+        ) : (
+          <div className="w-full h-full flex items-center justify-center bg-muted/30 group-hover:bg-primary/5 transition-colors duration-300">
+             <div className="text-center">
+               <span className="text-6xl font-display text-foreground/20 group-hover:text-primary/40 transition-colors duration-300">
+                 {leader.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
+               </span>
+             </div>
+          </div>
+        )}
         
         {/* Social Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-black/40">
-           <button className="bg-primary text-primary-foreground p-3 rounded-full hover:scale-110 transition-transform">
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 bg-black/10">
+           <button className="bg-primary text-primary-foreground p-3 rounded-full hover:scale-110 transition-transform shadow-lg">
              <ArrowUpRight className="w-6 h-6" />
            </button>
         </div>
