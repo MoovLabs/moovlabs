@@ -48,7 +48,7 @@ const FaqItem = ({
         "
       >
         <span className="
-          text-lg sm:text-xl md:text-2xl lg:text-3xl 
+          text-lg
           font-display font-semibold uppercase tracking-wide 
           text-foreground 
           group-hover:text-primary transition-colors duration-200

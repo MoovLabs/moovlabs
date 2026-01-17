@@ -60,8 +60,8 @@ const Navigation = () => {
         {/* Logo */}
         <a href="#" className="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
           <Logo size="md" />
-          <span className="font-display text-lg sm:text-xl tracking-wide hidden xs:block group-hover:text-primary transition-colors">
-            MOOBLABS
+          <span className="font-display text-lg sm:text-xl tracking-wide hidden sm:block  transition-colors">
+            MOOVLABS
           </span>
         </a>
 

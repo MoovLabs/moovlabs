@@ -35,7 +35,7 @@ const Footer = () => {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4 sm:mb-6 group cursor-pointer">
               <Logo size="md" animated={false} />
-              <span className="font-display text-xl sm:text-2xl tracking-wide group-hover:text-primary transition-colors">MOOBLABS</span>
+              <span className="font-display text-xl sm:text-2xl tracking-wide group-hover:text-primary transition-colors">MOOVLABS</span>
             </div>
             <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-6">
               Créez l'avenir avec nous. Innovation, créativité et excellence au service de vos projets digitaux.
