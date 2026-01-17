@@ -15,13 +15,13 @@ const Footer = () => {
               <span className="font-display text-3xl tracking-wide">MOOBLABS</span>
             </div>
             <p className="text-muted-foreground text-lg max-w-md mb-8">
-              We craft bold digital experiences that transform brands and drive results.
+              Nous créons des expériences digitales audacieuses qui transforment les marques et génèrent des résultats.
             </p>
             <a
               href="#contact"
               className="inline-flex items-center gap-2 btn-brutalist"
             >
-              Start a Project
+              Démarrer un Projet
               <ArrowUpRight className="w-5 h-5" />
             </a>
           </div>
@@ -32,13 +32,19 @@ const Footer = () => {
               Navigation
             </h4>
             <nav className="flex flex-col gap-3">
-              {["Home", "Services", "Work", "About", "Contact"].map((item) => (
+              {[
+                { name: "Accueil", href: "#" },
+                { name: "Services", href: "#services" },
+                { name: "Projets", href: "#work" },
+                { name: "À propos", href: "#about" },
+                { name: "Contact", href: "#contact" }
+              ].map((item) => (
                 <a
-                  key={item}
-                  href={item === "Home" ? "#" : `#${item.toLowerCase()}`}
+                  key={item.name}
+                  href={item.href}
                   className="text-muted-foreground hover:text-primary transition-colors font-medium"
                 >
-                  {item}
+                  {item.name}
                 </a>
               ))}
             </nav>
@@ -47,7 +53,7 @@ const Footer = () => {
           {/* Social */}
           <div>
             <h4 className="font-display text-xl uppercase tracking-widest mb-6 text-foreground">
-              Connect
+              Réseaux
             </h4>
             <nav className="flex flex-col gap-3">
               {["Twitter", "LinkedIn", "Instagram", "Dribbble", "Behance"].map((item) => (
@@ -70,14 +76,14 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Mooblabs. All rights reserved.
+            © {new Date().getFullYear()} Mooblabs. Tous droits réservés.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Privacy Policy
+              Politique de Confidentialité
             </a>
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-              Terms of Service
+              Conditions d'Utilisation
             </a>
           </div>
         </div>

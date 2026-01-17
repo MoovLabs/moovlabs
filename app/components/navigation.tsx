@@ -9,8 +9,8 @@ import Logo from "./logo";
 
 const navItems = [
   { label: "Services", href: "#services" },
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
+  { label: "Projets", href: "#work" },
+  { label: "À propos", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 

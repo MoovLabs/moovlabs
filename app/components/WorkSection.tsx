@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
@@ -9,31 +10,31 @@ const projects = [
     title: "FLUX STUDIO",
     category: "Web Design",
     year: "2024",
-    description: "A creative studio website with immersive animations and bold typography",
+    description: "Site web studio créatif avec animations immersives et typographie audacieuse",
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=600&fit=crop",
-    tags: ["UI/UX", "Development", "Branding"],
+    tags: ["UI/UX", "Développement", "Branding"],
   },
   {
     title: "NOVA FINANCE",
     category: "Branding",
     year: "2024",
-    description: "Complete brand identity for a forward-thinking fintech startup",
+    description: "Identité de marque complète pour une startup fintech visionnaire",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
-    tags: ["Identity", "Strategy", "Digital"],
+    tags: ["Identité", "Stratégie", "Digital"],
   },
   {
     title: "ECHO APP",
-    category: "Mobile App",
+    category: "Application Mobile",
     year: "2023",
-    description: "Social audio platform with sleek, intuitive UI design",
+    description: "Plateforme audio sociale avec une interface UI élégante et intuitive",
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
-    tags: ["iOS", "Android", "UX Research"],
+    tags: ["iOS", "Android", "Recherche UX"],
   },
   {
     title: "VERTEX AGENCY",
-    category: "Development",
+    category: "Développement",
     year: "2023",
-    description: "High-performance agency website with custom animations",
+    description: "Site web d'agence haute performance avec animations personnalisées",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
     tags: ["React", "Animation", "Performance"],
   },
@@ -55,14 +56,21 @@ const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: n
       }`}
     >
       {/* Image */}
-      <div className={`overflow-hidden ${isLarge ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
-        <motion.img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+      <div className={`relative overflow-hidden ${isLarge ? "aspect-[16/9]" : "aspect-[4/3]"}`}>
+        <motion.div
+          className="w-full h-full"
           whileHover={{ scale: 1.08 }}
           transition={{ duration: 0.7 }}
-        />
+        >
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+            sizes={isLarge ? "(max-width: 768px) 100vw, 100vw" : "(max-width: 768px) 100vw, 50vw"}
+            priority={index <= 1}
+          />
+        </motion.div>
       </div>
 
       {/* Overlay */}
@@ -130,18 +138,18 @@ const WorkSection = () => {
           <div className="flex items-center gap-4 mb-6">
             <div className="w-16 h-[3px] bg-primary" />
             <p className="text-sm font-bold uppercase tracking-[0.4em] text-primary">
-              Selected Work
+              Projets Sélectionnés
             </p>
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
             <h2 className="text-display-lg text-foreground">
-              OUR <span className="text-gradient-gold">PROJECTS</span>
+              NOS <span className="text-gradient-gold">RÉALISATIONS</span>
             </h2>
             <a
               href="#"
               className="inline-flex items-center gap-2 text-foreground font-bold uppercase tracking-widest text-sm group"
             >
-              <span className="link-underline">View All Projects</span>
+              <span className="link-underline">Voir tous les projets</span>
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
           </div>

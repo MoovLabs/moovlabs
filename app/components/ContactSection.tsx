@@ -33,16 +33,16 @@ const ContactSection = () => {
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-16 h-[3px] bg-primary" />
             <p className="text-sm font-bold uppercase tracking-[0.4em] text-primary">
-              Get In Touch
+              Contactez-nous
             </p>
             <div className="w-16 h-[3px] bg-primary" />
           </div>
           <h2 className="text-display-lg text-foreground mb-6">
-            LET'S <span className="text-gradient-gold">CREATE</span> TOGETHER
+            CRÉONS <span className="text-gradient-gold">ENSEMBLE</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind? We'd love to hear about it. 
-            Drop us a line and let's build something <span className="text-serif text-primary">extraordinary</span>.
+            Vous avez un projet en tête ? Nous adorerions en entendre parler. 
+            Écrivez-nous et construisons quelque chose d'<span className="text-serif text-primary">extraordinaire</span>.
           </p>
         </motion.div>
 
@@ -58,8 +58,8 @@ const ContactSection = () => {
             <div className="space-y-4">
               {[
                 { icon: Mail, label: "Email", value: "hello@mooblabs.com", href: "mailto:hello@mooblabs.com" },
-                { icon: Phone, label: "Phone", value: "+1 (234) 567-890", href: "tel:+1234567890" },
-                { icon: MapPin, label: "Location", value: "Paris, France", href: null },
+                { icon: Phone, label: "Téléphone", value: "+1 (234) 567-890", href: "tel:+1234567890" },
+                { icon: MapPin, label: "Adresse", value: "Paris, France", href: null },
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
@@ -109,7 +109,7 @@ const ContactSection = () => {
               className="pt-8"
             >
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground mb-4">
-                Follow Us
+                Suivez-nous
               </p>
               <div className="flex flex-wrap gap-3">
                 {["Twitter", "LinkedIn", "Instagram", "Dribbble"].map((social) => (
@@ -136,7 +136,7 @@ const ContactSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-bold uppercase tracking-widest text-foreground/80 mb-3">
-                  Your Name
+                  Votre Nom
                 </label>
                 <input
                   type="text"
@@ -144,14 +144,14 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-6 py-4 bg-background border-2 border-foreground/20 focus:outline-none focus:border-primary transition-colors text-foreground placeholder:text-muted-foreground"
-                  placeholder="John Doe"
+                  placeholder="Jean Dupont"
                   required
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-bold uppercase tracking-widest text-foreground/80 mb-3">
-                  Email Address
+                  Adresse Email
                 </label>
                 <input
                   type="email"
@@ -167,7 +167,7 @@ const ContactSection = () => {
 
             <div>
               <label htmlFor="project" className="block text-sm font-bold uppercase tracking-widest text-foreground/80 mb-3">
-                Project Type
+                Type de Projet
               </label>
               <select
                 id="project"
@@ -176,18 +176,18 @@ const ContactSection = () => {
                 className="w-full px-6 py-4 bg-background border-2 border-foreground/20 focus:outline-none focus:border-primary transition-colors text-foreground"
                 required
               >
-                <option value="">Select a project type</option>
-                <option value="branding">Brand Identity</option>
-                <option value="web">Web Development</option>
-                <option value="app">Mobile App</option>
-                <option value="marketing">Digital Marketing</option>
-                <option value="other">Other</option>
+                <option value="">Sélectionnez un type de projet</option>
+                <option value="branding">Identité de Marque</option>
+                <option value="web">Développement Web</option>
+                <option value="app">Application Mobile</option>
+                <option value="marketing">Marketing Digital</option>
+                <option value="other">Autre</option>
               </select>
             </div>
 
             <div>
               <label htmlFor="message" className="block text-sm font-bold uppercase tracking-widest text-foreground/80 mb-3">
-                Your Message
+                Votre Message
               </label>
               <textarea
                 id="message"
@@ -195,7 +195,7 @@ const ContactSection = () => {
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="w-full px-6 py-4 bg-background border-2 border-foreground/20 focus:outline-none focus:border-primary transition-colors resize-none text-foreground placeholder:text-muted-foreground"
-                placeholder="Tell us about your project..."
+                placeholder="Parlez-nous de votre projet..."
                 required
               />
             </div>
@@ -206,7 +206,7 @@ const ContactSection = () => {
               whileHover={{ scale: 1.01 }}
               whileTap={{ scale: 0.99 }}
             >
-              Send Message
+              Envoyer le Message
               <ArrowRight className="w-5 h-5" />
             </motion.button>
           </motion.form>

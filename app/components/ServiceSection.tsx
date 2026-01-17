@@ -9,38 +9,38 @@ import { Code, Palette, Megaphone, Smartphone, Globe, Zap } from "lucide-react";
 const services = [
   {
     icon: Palette,
-    title: "Brand Identity",
-    description: "Logos, visual systems, and brand guidelines that capture your essence and resonate with your audience.",
+    title: "Identité de Marque",
+    description: "Logos, systèmes visuels et chartes graphiques qui capturent votre essence et résonnent avec votre audience.",
     number: "01",
   },
   {
     icon: Code,
-    title: "Web Development",
-    description: "Custom websites built with modern tech for blazing-fast performance and exceptional user experience.",
+    title: "Développement Web",
+    description: "Sites web sur mesure construits avec des technologies modernes pour une performance ultra-rapide et une expérience utilisateur exceptionnelle.",
     number: "02",
   },
   {
     icon: Megaphone,
-    title: "Digital Marketing",
-    description: "Strategic campaigns that amplify your message and connect you with your ideal customers.",
+    title: "Marketing Digital",
+    description: "Campagnes stratégiques qui amplifient votre message et vous connectent avec vos clients idéaux.",
     number: "03",
   },
   {
     icon: Smartphone,
-    title: "Mobile Apps",
-    description: "Native and cross-platform applications crafted for seamless mobile experiences.",
+    title: "Applications Mobiles",
+    description: "Applications natives et multiplateformes conçues pour des expériences mobiles fluides.",
     number: "04",
   },
   {
     icon: Globe,
-    title: "UI/UX Design",
-    description: "User-centered interfaces that prioritize usability while delighting your customers.",
+    title: "Design UI/UX",
+    description: "Interfaces centrées sur l'utilisateur qui privilégient l'ergonomie tout en ravissant vos clients.",
     number: "05",
   },
   {
     icon: Zap,
-    title: "Strategy",
-    description: "Data-driven strategies that align your digital presence with business objectives.",
+    title: "Stratégie",
+    description: "Stratégies basées sur les données qui alignent votre présence digitale avec vos objectifs commerciaux.",
     number: "06",
   },
 ];
@@ -91,7 +91,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
         className="mt-8 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
       >
         <span className="text-primary font-bold text-sm uppercase tracking-widest">
-          Learn More
+          En savoir plus
         </span>
         <span className="text-primary">→</span>
       </motion.div>
@@ -117,16 +117,16 @@ const ServicesSection = () => {
           <div className="flex items-center gap-4 mb-6">
             <div className="w-16 h-[3px] bg-primary" />
             <p className="text-sm font-bold uppercase tracking-[0.4em] text-primary">
-              What We Do
+              Ce que nous faisons
             </p>
           </div>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
             <h2 className="text-display-lg text-foreground">
-              OUR <span className="text-gradient-gold">SERVICES</span>
+              NOS <span className="text-gradient-gold">SERVICES</span>
             </h2>
             <p className="max-w-md text-muted-foreground text-lg">
-              From concept to launch, we provide end-to-end solutions that transform ideas into 
-              <span className="text-serif text-primary"> remarkable</span> digital experiences.
+              Du concept au lancement, nous fournissons des solutions complètes qui transforment les idées en expériences digitales
+              <span className="text-serif text-primary"> remarquables</span>.
             </p>
           </div>
         </motion.div>

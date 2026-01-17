@@ -4,10 +4,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const values = [
-  { title: "Bold", description: "We push boundaries and challenge conventions" },
-  { title: "Authentic", description: "We stay true to each brand's unique voice" },
-  { title: "Precise", description: "Every pixel, every detail matters to us" },
-  { title: "Human", description: "We design for real people, not metrics" },
+  { title: "Audacieux", description: "Nous repoussons les limites et défions les conventions" },
+  { title: "Authentique", description: "Nous restons fidèles à la voix unique de chaque marque" },
+  { title: "Précis", description: "Chaque pixel, chaque détail compte pour nous" },
+  { title: "Humain", description: "Nous concevons pour de vraies personnes, pas des métriques" },
 ];
 
 const AboutSection = () => {
@@ -28,7 +28,7 @@ const AboutSection = () => {
           <div className="flex items-center gap-4 mb-6">
             <div className="w-16 h-[3px] bg-primary" />
             <p className="text-sm font-bold uppercase tracking-[0.4em] text-primary">
-              About Us
+              À Propos
             </p>
           </div>
         </motion.div>
@@ -43,20 +43,20 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="text-display-lg text-foreground mb-8">
-              WE ARE <span className="text-gradient-gold">MOOBLABS</span>
+              NOUS SOMMES <span className="text-gradient-gold">MOOBLABS</span>
             </h2>
             
             <div className="space-y-6 text-xl leading-relaxed text-muted-foreground">
               <p>
-                We're a team of <span className="text-foreground font-semibold">designers</span>, 
-                <span className="text-foreground font-semibold"> developers</span>, and 
-                <span className="text-foreground font-semibold"> strategists</span> who believe 
-                that great design has the power to transform businesses.
+                Nous sommes une équipe de <span className="text-foreground font-semibold">designers</span>, 
+                <span className="text-foreground font-semibold"> développeurs</span>, et 
+                <span className="text-foreground font-semibold"> stratèges</span> qui croient 
+                que le bon design a le pouvoir de transformer les entreprises.
               </p>
               <p>
-                Founded with a passion for <span className="text-serif text-primary">bold creativity</span>, 
-                we combine artistry with technology to deliver solutions that don't just look stunning—they 
-                drive real, measurable results.
+                Fondés avec une passion pour la <span className="text-serif text-primary">créativité audacieuse</span>, 
+                nous combinons art et technologie pour livrer des solutions qui ne sont pas seulement superbes—elles 
+                génèrent des résultats réels et mesurables.
               </p>
             </div>
 
@@ -69,9 +69,9 @@ const AboutSection = () => {
             >
               <div className="absolute -left-4 top-0 bottom-0 w-1 bg-primary" />
               <blockquote className="pl-8 text-3xl md:text-4xl font-display text-foreground leading-tight">
-                "WE DON'T JUST CREATE WEBSITES.
+                "NOUS NE CRÉONS PAS JUSTE DES SITES WEB.
                 <br />
-                <span className="text-gradient-gold">WE CRAFT EXPERIENCES</span> THAT LEAVE A LASTING IMPRESSION."
+                <span className="text-gradient-gold">NOUS FAÇONNONS DES EXPÉRIENCES</span> QUI LAISSENT UNE IMPRESSION DURABLE."
               </blockquote>
             </motion.div>
           </motion.div>
@@ -86,7 +86,7 @@ const AboutSection = () => {
             {/* Values */}
             <div className="mb-12">
               <h3 className="text-xl font-bold uppercase tracking-widest text-foreground mb-8">
-                Our Values
+                Nos Valeurs
               </h3>
               <div className="space-y-4">
                 {values.map((value, index) => (
@@ -118,10 +118,10 @@ const AboutSection = () => {
             {/* Mini Stats */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                { value: "50+", label: "Projects Delivered" },
-                { value: "8+", label: "Years Experience" },
-                { value: "30+", label: "Happy Clients" },
-                { value: "15", label: "Team Members" },
+                { value: "50+", label: "Projets Livrés" },
+                { value: "8+", label: "Années d'Expérience" },
+                { value: "30+", label: "Clients Heureux" },
+                { value: "15", label: "Membres de l'Équipe" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}
@@ -152,7 +152,7 @@ const AboutSection = () => {
           <div className="flex animate-marquee whitespace-nowrap">
             {[...Array(4)].map((_, i) => (
               <span key={i} className="text-display text-[10rem] md:text-[14rem] text-foreground/[0.03] px-8">
-                MOOBLABS • DIGITAL AGENCY • CREATIVE STUDIO • BOLD DESIGN •
+                MOOBLABS • AGENCE DIGITALE • STUDIO CRÉATIF • DESIGN AUDACIEUX •
               </span>
             ))}
           </div>
