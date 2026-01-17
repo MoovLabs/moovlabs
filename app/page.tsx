@@ -7,6 +7,10 @@ import HeroSection from "./components/Herosection";
 import ServicesSection from "./components/ServiceSection";
 import WorkSection from "./components/WorkSection";
 
+import TestimonialsSection from "./components/testimonialsSection";
+
+import FaqSection from "./components/FaqSection";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -14,7 +18,9 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <WorkSection />
+      <TestimonialsSection />
       <AboutSection />
+      <FaqSection />
       <ContactSection />
       <Footer />
     </div>
