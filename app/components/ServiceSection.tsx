@@ -55,7 +55,7 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
       initial={{ opacity: 0, y: 60 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ delay: index * 0.1, duration: 0.6 }}
-      className="group relative card-retro p-8 md:p-10"
+      className="group relative card-retro p-8 md:p-10 rounded-2xl"
     >
       {/* Number - Large background */}
       <span className="absolute top-4 right-4 text-[8rem] font-display text-foreground/[0.03] leading-none group-hover:text-primary/10 transition-colors duration-500">
