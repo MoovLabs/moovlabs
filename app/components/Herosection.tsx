@@ -51,7 +51,7 @@ const HeroSection = () => {
         >
           <div className="w-16 h-[3px] bg-primary" />
           <p className="text-sm md:text-base font-bold uppercase tracking-[0.4em] text-primary">
-            Digital Creative Agency
+            Agence Créative Digitale
           </p>
         </motion.div>
 
@@ -63,7 +63,7 @@ const HeroSection = () => {
             animate={{ y: 0 }}
             transition={{ delay: 0.3, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            WE BUILD
+            CRÉONS
           </motion.h1>
         </div>
         <div className="overflow-hidden">
@@ -73,18 +73,18 @@ const HeroSection = () => {
             animate={{ y: 0 }}
             transition={{ delay: 0.4, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="text-gradient-gold">BOLD</span>
-            <span className="text-stroke ml-6 hidden md:inline">DIGITAL</span>
+            <span className="text-stroke">L'IMPACT</span>
           </motion.h1>
         </div>
         <div className="overflow-hidden">
           <motion.h1
-            className="text-display-xl text-foreground"
+            className="text-display-xl"
             initial={{ y: 150 }}
             animate={{ y: 0 }}
             transition={{ delay: 0.5, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            EXPERIENCES<span className="text-primary">.</span>
+            <span className="text-gradient-gold">DIGITAL</span>
+            <span className="text-primary">.</span>
           </motion.h1>
         </div>
 
@@ -97,9 +97,9 @@ const HeroSection = () => {
             transition={{ delay: 0.8, duration: 0.6 }}
           >
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-lg">
-              We're a <span className="text-foreground font-semibold">creative studio</span> specializing in 
-              brand identity, web design, and digital products that make an 
-              <span className="text-serif text-primary"> impact</span>.
+              Nous sommes un <span className="text-foreground font-semibold">studio créatif</span> spécialisé dans 
+              l'identité de marque, le web design et les produits digitaux qui marquent les 
+              <span className="text-serif text-primary"> esprits</span>.
             </p>
           </motion.div>
 
@@ -111,11 +111,11 @@ const HeroSection = () => {
             transition={{ delay: 1, duration: 0.6 }}
           >
             <a href="#work" className="btn-brutalist inline-flex items-center gap-3">
-              View Our Work
+              Voir nos projets
               <ArrowRight className="w-5 h-5" />
             </a>
             <a href="#contact" className="btn-outline-brutalist">
-              Let's Talk
+              Discutons
             </a>
           </motion.div>
         </div>
@@ -128,8 +128,8 @@ const HeroSection = () => {
           transition={{ delay: 1.2, duration: 0.6 }}
         >
           {[
-            { value: "50+", label: "Projects" },
-            { value: "8", label: "Years" },
+            { value: "50+", label: "Projets" },
+            { value: "8", label: "Années" },
             { value: "30+", label: "Clients" },
             { value: "100%", label: "Passion" },
           ].map((stat, index) => (
@@ -158,7 +158,7 @@ const HeroSection = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.8, duration: 0.6 }}
       >
-        <span className="text-xs uppercase tracking-widest text-muted-foreground">Scroll</span>
+        <span className="text-xs uppercase tracking-widest text-muted-foreground">Défiler</span>
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}

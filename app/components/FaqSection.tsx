@@ -7,20 +7,20 @@ import { Plus } from "lucide-react";
 // FAQ Data
 const faqs = [
   {
-    question: "What is your typical project timeline?",
-    answer: "Our project timelines vary depending on the scope and complexity. A standard branding project takes 2-4 weeks, while a custom website typically requires 4-8 weeks. We provide a detailed timeline during our initial consultation to set clear expectations."
+    question: "Quel est votre délai typique pour un projet ?",
+    answer: "Nos délais varient selon l'envergure et la complexité. Un projet de branding standard prend 2-4 semaines, tandis qu'un site web sur mesure nécessite généralement 4-8 semaines. Nous fournissons un calendrier détaillé lors de notre consultation initiale."
   },
   {
-    question: "How do you handle pricing and payments?",
-    answer: "We operate on a transparent fixed-pricing model for most projects, split into milestones (typically 50% deposit, 50% upon completion). For ongoing partnerships or complex product development, we offer retainer or time-and-materials arrangements."
+    question: "Comment gérez-vous la facturation ?",
+    answer: "Nous fonctionnons sur un modèle de prix fixe transparent pour la plupart des projets, divisé en étapes (typiquement 50% d'acompte, 50% à la livraison). Pour les partenariats continus, nous proposons des forfaits de maintenance."
   },
   {
-    question: "Do you provide post-launch support?",
-    answer: "Absolutely. We offer 30 days of complimentary support after launch to ensure everything runs smoothly. Beyond that, we provide flexible maintenance packages to keep your digital products secure, updated, and performing at their best."
+    question: "Fournissez-vous un support après lancement ?",
+    answer: "Absolument. Nous offrons 30 jours de support gratuit après le lancement pour assurer que tout fonctionne parfaitement. Au-delà, nous proposons des forfaits de maintenance flexibles pour garder vos produits digitaux sécurisés et à jour."
   },
   {
-    question: "What makes Moovlabs Studio different?",
-    answer: "We blend strategic business thinking with high-end aesthetic design. We don't just make things look good; we build digital assets that drive growth, improve conversion, and position your brand as a market leader."
+    question: "Qu'est-ce qui rend Moovlabs Studio différent ?",
+    answer: "Nous allions réflexion stratégique et design esthétique haut de gamme. Nous ne faisons pas que de belles choses ; nous construisons des actifs digitaux qui stimulent la croissance et positionnent votre marque comme leader."
   }
 ];
 
@@ -73,7 +73,7 @@ const FaqSection = () => {
               </p>
             </div>
             <h2 className="text-display-lg text-foreground">
-              COMMON <span className="text-stroke-gold">QUESTIONS</span>
+              QUESTIONS <span className="text-stroke-gold">FRÉQUENTES</span>
             </h2>
           </div>
         </div>

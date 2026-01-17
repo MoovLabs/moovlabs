@@ -10,7 +10,7 @@ import { Quote, Star, ArrowUpRight } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    content: "Moovlabs Studio transformed our digital presence. The team didn't just build a website; they crafted a digital experience that perfectly captures our brand essence. The attention to detail is unmatched.",
+    content: "Moovlabs Studio a transformé notre présence digitale. L'équipe n'a pas seulement construit un site web ; ils ont créé une expérience digitale qui capture parfaitement l'essence de notre marque. Le souci du détail est inégalé.",
     author: "Sarah Jenkins",
     role: "CMO, TechFlow",
     rating: 5,
@@ -18,17 +18,17 @@ const testimonials = [
   },
   {
     id: 2,
-    content: "Working with them was a game-changer. Their strategic approach to UI/UX significantly improved our conversion rates. They are not just designers; they are growth partners.",
+    content: "Travailler avec eux a changé la donne. Leur approche stratégique de l'UI/UX a considérablement amélioré nos taux de conversion. Ce ne sont pas juste des designers ; ce sont des partenaires de croissance.",
     author: "David Chen",
-    role: "Founder, Zenith",
+    role: "Fondateur, Zenith",
     rating: 5,
     image: "/images/testimonials/avatar2.jpg"
   },
   {
     id: 3,
-    content: "The level of creativity and technical expertise is rare to find. They delivered a complex platform ahead of schedule and beyond our expectations. Truly world-class service.",
+    content: "Le niveau de créativité et d'expertise technique est rare. Ils ont livré une plateforme complexe en avance sur le planning et au-delà de nos attentes. Un service vraiment de classe mondiale.",
     author: "Elena Rodriguez",
-    role: "Product Director, Nova",
+    role: "Directrice Produit, Nova",
     rating: 5,
     image: "/images/testimonials/avatar3.jpg"
   }
@@ -38,20 +38,20 @@ const testimonials = [
 const leaders = [
   {
     name: "Kevin Randrianado",
-    role: "CEO and Co-Founder",
-    bio: "Visionary designer with 15+ years crafting award-winning brand identities.",
+    role: "CEO et Co-Fondateur",
+    bio: "Visionnaire avec plus de 15 ans d'expérience dans la création d'identités de marque primées.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
   },
   {
     name: "Herizo RAKOTOMAMPIONONA",
-    role: "CTO and Co-Founder",
-    bio: "Full-stack architect obsessed with performance and scalable systems.",
+    role: "CTO et Co-Fondateur",
+    bio: "Architecte full-stack obsédé par la performance et les systèmes évolutifs.",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80"
   },
   {
     name: "Onjaniana Rolland",
-    role: "COO and Co-Founder",
-    bio: "Data-driven strategist ensuring every pixel serves a business purpose.",
+    role: "COO et Co-Fondatrice",
+    bio: "Stratège axée sur les données s'assurant que chaque pixel sert un objectif commercial.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80"
   }
 ];
@@ -151,16 +151,11 @@ const TestimonialsSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-20 text-center"
         >
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 border border-primary/30 rounded-full bg-primary/5">
-            <Star className="w-4 h-4 text-primary fill-primary" />
-            <span className="text-xs font-bold uppercase tracking-widest text-primary">Testimonials</span>
-          </div>
-          
           <h2 className="text-display-lg text-foreground mb-6">
-            CLIENT <span className="text-stroke-gold">STORIES</span>
+            HISTOIRES <span className="text-stroke-gold">CLIENTS</span>
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            Don't just take our word for it. Hear from the visionaries we've had the privilege to collaborate with.
+            Ne nous croyez pas sur parole. Écoutez les visionnaires avec qui nous avons eu le privilège de collaborer.
           </p>
         </motion.div>
 
@@ -183,15 +178,15 @@ const TestimonialsSection = () => {
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-[3px] bg-primary" />
               <p className="text-sm font-bold uppercase tracking-[0.4em] text-primary">
-                Leadership
+                Dirigeants
               </p>
             </div>
             <h2 className="text-display-lg text-foreground">
-              MEET THE <span className="text-gradient-gold">MINDS</span>
+              RENCONTREZ LES <span className="text-gradient-gold">ESPRITS</span>
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground text-lg pb-4">
-            A collective of creative strategists and technical experts dedicated to pushing digital boundaries.
+            Un collectif de stratèges créatifs et d'experts techniques dédiés à repousser les limites du digital.
           </p>
         </motion.div>
 
