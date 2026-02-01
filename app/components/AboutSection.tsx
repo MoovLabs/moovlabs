@@ -2,6 +2,8 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { FaAws, FaDocker, FaGitAlt, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript, SiMongodb, SiPostgresql, SiPrisma, SiTailwindcss, SiGraphql, SiFirebase } from "react-icons/si";
 
 const values = [
   { title: "Audacieux", description: "Nous repoussons les limites et défions les conventions" },
@@ -9,7 +11,22 @@ const values = [
   { title: "Précis", description: "Chaque pixel, chaque détail compte pour nous" },
   { title: "Humain", description: "Nous concevons pour de vraies personnes, pas des métriques" },
 ];
-
+const technologies = [
+  { name: "React", icon: <FaReact className="text-[#61DAFB]" /> },
+  { name: "Next.js", icon: <SiNextdotjs className="text-black dark:text-white" /> },
+  { name: "TypeScript", icon: <SiTypescript className="text-[#3178C6]" /> },
+  { name: "Node.js", icon: <FaNodeJs className="text-[#339933]" /> },
+  { name: "Python", icon: <FaPython className="text-[#3776AB]" /> },
+  { name: "Docker", icon: <FaDocker className="text-[#2496ED]" /> },
+  { name: "MongoDB", icon: <SiMongodb className="text-[#47A248]" /> },
+  { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" /> },
+  { name: "Prisma", icon: <SiPrisma className="text-[#2D3748] dark:text-white" /> },
+  { name: "Tailwind", icon: <SiTailwindcss className="text-[#38BDF8]" /> },
+  { name: "GraphQL", icon: <SiGraphql className="text-[#E10098]" /> },
+  { name: "AWS", icon: <FaAws className="text-[#FF9900]" /> },
+  { name: "Firebase", icon: <SiFirebase className="text-[#FFCA28]" /> },
+  { name: "Git", icon: <FaGitAlt className="text-[#F05032]" /> },
+];
 const AboutSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -141,22 +158,6 @@ const AboutSection = () => {
             </div>
           </motion.div>
         </div>
-
-        {/* Marquee */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ delay: 1, duration: 0.6 }}
-          className="mt-32 -mx-6 md:-mx-12 lg:-mx-20 overflow-hidden border-y-2 border-foreground/10 py-8"
-        >
-          <div className="flex animate-marquee whitespace-nowrap">
-            {[...Array(4)].map((_, i) => (
-              <span key={i} className="text-display text-[10rem] md:text-[14rem] text-foreground/[0.03] px-8">
-                MOOBLABS • AGENCE DIGITALE • STUDIO CRÉATIF • DESIGN AUDACIEUX •
-              </span>
-            ))}
-          </div>
-        </motion.div>
       </div>
 
       <div className="mt-28 -mx-6 md:-mx-12 lg:-mx-20 overflow-hidden border-y border-foreground/10 py-8">

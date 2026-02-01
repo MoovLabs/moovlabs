@@ -10,6 +10,7 @@ import WorkSection from "./components/WorkSection";
 import TestimonialsSection from "./components/testimonialsSection";
 
 import FaqSection from "./components/FaqSection";
+// import { MarqueeSection } from "./components/marqueeSection";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <TestimonialsSection />
       <AboutSection />
       <FaqSection />
+      {/* <MarqueeSection /> */}
       <ContactSection />
       <Footer />
     </div>
