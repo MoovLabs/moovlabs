@@ -6,7 +6,7 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-28 overflow-hidden noise-bg retro-grid">
+    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-28 overflow-hidden noise-bg retro-grid" id="home">
       {/* Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Large decorative circle */}
