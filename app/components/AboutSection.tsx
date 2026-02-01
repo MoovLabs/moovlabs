@@ -158,6 +158,25 @@ const AboutSection = () => {
           </div>
         </motion.div>
       </div>
+
+      <div className="mt-28 -mx-6 md:-mx-12 lg:-mx-20 overflow-hidden border-y border-foreground/10 py-8">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {[...Array(3)].map((_, i) => (
+              <div key={i} className="flex items-center gap-14 px-14">
+                {technologies.map((tech, index) => (
+                  <div key={index} className="flex flex-col items-center gap-3">
+                    <div className="text-5xl sm:text-6xl">
+                      {tech.icon}
+                    </div>
+                    <span className="text-sm sm:text-base font-semibold text-muted-foreground">
+                      {tech.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
     </section>
   );
 };
