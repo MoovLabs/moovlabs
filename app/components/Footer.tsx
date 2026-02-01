@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
 import Logo from "./logo";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
+export const reseaux = [
+  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61586093841906" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/company/moovlabs-studio/" },
+  { name: "Instagram", href: "https://www.instagram.com/moovlabs_studio/" },
+  { name: "Dribbble", href: "https://dribbble.com/moovlabs" },
+]
 
 const Footer = () => {
   return (
@@ -56,15 +63,15 @@ const Footer = () => {
               Réseaux
             </h4>
             <nav className="flex flex-col gap-3">
-              {["Twitter", "LinkedIn", "Instagram", "Dribbble", "Behance"].map((item) => (
-                <a
-                  key={item}
-                  href="#"
+              {reseaux.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
                   className="text-muted-foreground hover:text-primary transition-colors font-medium inline-flex items-center gap-2"
                 >
-                  {item}
+                  {item.name}
                   <ArrowUpRight className="w-4 h-4" />
-                </a>
+                </Link>
               ))}
             </nav>
           </div>

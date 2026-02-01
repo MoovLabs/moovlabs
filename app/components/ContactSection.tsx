@@ -2,7 +2,8 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, Phone, Send, ArrowRight } from "lucide-react";
+import { Mail, MapPin, Phone, Send, ArrowRight, Link } from "lucide-react";
+import { reseaux } from "./Footer";
 
 const ContactSection = () => {
   const ref = useRef(null);
@@ -57,9 +58,9 @@ const ContactSection = () => {
             {/* Info Cards */}
             <div className="space-y-4">
               {[
-                { icon: Mail, label: "Email", value: "hello@mooblabs.com", href: "mailto:hello@mooblabs.com" },
-                { icon: Phone, label: "Téléphone", value: "+1 (234) 567-890", href: "tel:+1234567890" },
-                { icon: MapPin, label: "Adresse", value: "Paris, France", href: null },
+                { icon: Mail, label: "Email", value: "hello@moovlabs.tech", href: "mailto:hello@moovlabs.tech" },
+                { icon: Phone, label: "Téléphone", value: "+261 37 50 146 26", href: "tel:+261375014626" },
+                { icon: MapPin, label: "Adresse", value: "Antananarivo, Madagascar", href: null },
               ].map((item, index) => (
                 <motion.div
                   key={item.label}
@@ -112,14 +113,14 @@ const ContactSection = () => {
                 Suivez-nous
               </p>
               <div className="flex flex-wrap gap-3">
-                {["Twitter", "LinkedIn", "Instagram", "Dribbble"].map((social) => (
-                  <a
-                    key={social}
-                    href="#"
+                {reseaux.map((social) => (
+                  <Link
+                    key={social.name}
+                    href={social.href}
                     className="px-5 py-3 border-2 border-foreground/20 text-sm font-bold uppercase tracking-wider text-foreground hover:border-primary hover:text-primary hover:bg-primary/5 transition-all duration-300"
                   >
-                    {social}
-                  </a>
+                    {social.name}
+                  </Link>
                 ))}
               </div>
             </motion.div>

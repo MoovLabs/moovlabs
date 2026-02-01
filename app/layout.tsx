@@ -13,34 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.mooblabs.studio'),
+  metadataBase: new URL('https://www.moovlabs.tech'),
   alternates: {
     canonical: '/',
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/icone-moovlabs.png',
+    shortcut: '/icone-moovlabs.png',
+    apple: '/icone-moovlabs.png',
   },
   manifest: '/site.webmanifest',
   title: {
     template: '%s | Mooblabs Studio',
     default: 'Mooblabs Studio - Agence Créative Digitale',
   },
-  description: 'Mooblabs Studio est une agence créative spécialisée dans l\'identité de marque, le web design et les expériences digitales audacieuses.',
-  keywords: ['Agence web', 'Web Design', 'Branding', 'Développement', 'UI/UX', 'Digital Agency', 'Paris', 'Creative Studio'],
+  description: 'Mooblabs Studio est une agence créative spécialisée dans le developpement, le web design ,application mobile et les expériences digitales audacieuses.',
+  keywords: ['Agence web', "Mobile" , "Site Vitrine", "Application Mobile",'Web Design', 'Branding', 'Développement', 'UI/UX', 'Digital Agency', 'Madagascar', 'Antananarivo'],
   authors: [{ name: 'Mooblabs Studio' }],
   creator: 'Mooblabs Studio',
   publisher: 'Mooblabs Studio',
   formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
+    email: true,
+    address: true,
+    telephone: true,
   },
   openGraph: {
     title: 'Mooblabs Studio - Agence Créative Digitale',
     description: 'Nous créons des expériences digitales audacieuses qui transforment les marques.',
-    url: 'https://www.mooblabs.studio',
+    url: 'https://www.moovlabs.tech',
     siteName: 'Mooblabs Studio',
     locale: 'fr_FR',
     type: 'website',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Mooblabs Studio - Agence Créative Digitale',
-    description: 'Nous créons des expériences digitales audacieuses qui transforment les marques.',
+    description: 'Nous créons des expériences digitales audacieuses qui transforment appui votre revenu.',
     creator: '@mooblabs',
   },
   robots: {
@@ -73,23 +73,23 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Agency',
     name: 'Mooblabs Studio',
-    url: 'https://www.mooblabs.studio',
-    logo: 'https://www.mooblabs.studio/icon.png',
-    description: 'Agence créative spécialisée dans l\'identité de marque et le web design.',
+    url: 'https://www.moovlabs.tech',
+    logo: 'https://www.moovlabs.tech/icone-moovlabs.png',
+    description: 'Agence créative spécialisée dans le developpement web et mobile',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Paris',
-      addressCountry: 'FR',
+      addressLocality: 'Antananarivo',
+      addressCountry: 'MG',
     },
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+33-0-00-00-00-00',
-      contactType: 'customer service',
+      telephone: '+261375014626',
+      contactType: 'Service de developpement',
     },
   }
 
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.mooblabs.studio/sitemap.xml',
+    sitemap: 'https://www.moovlabs.tech/sitemap.xml',
   }
 }
