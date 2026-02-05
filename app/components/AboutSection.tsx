@@ -60,7 +60,7 @@ const AboutSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="text-display-lg text-foreground mb-8">
-              NOUS SOMMES <span className="text-gradient-gold">MOOBLABS</span>
+              NOUS SOMMES <span className="text-gradient-gold">MOOVLABS</span>
             </h2>
             
             <div className="space-y-6 text-xl leading-relaxed text-muted-foreground">

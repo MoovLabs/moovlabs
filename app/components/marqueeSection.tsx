@@ -16,7 +16,7 @@ export const MarqueeSection = () => {
           <div className="flex animate-marquee whitespace-nowrap">
             {[...Array(4)].map((_, i) => (
               <span key={i} className="text-display text-[10rem] md:text-[14rem] text-foreground/[0.03] px-8">
-                MOOBLABS • AGENCE DIGITALE • STUDIO CRÉATIF • DESIGN AUDACIEUX •
+                MOOVLABS • AGENCE DIGITALE • STUDIO CRÉATIF • DESIGN AUDACIEUX •
               </span>
             ))}
           </div>

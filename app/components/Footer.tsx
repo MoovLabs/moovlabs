@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
               <Logo size="lg" animated={false} />
-              <span className="font-display text-3xl tracking-wide">MOOBLABS</span>
+              <span className="font-display text-3xl tracking-wide">MOOVLABS</span>
             </div>
             <p className="text-muted-foreground text-lg max-w-md mb-8">
               Nous créons des expériences digitales audacieuses qui transforment les marques et génèrent des résultats.
@@ -83,7 +83,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Mooblabs. Tous droits réservés.
+            © {new Date().getFullYear()} Moovlabs. Tous droits réservés.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
