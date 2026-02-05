@@ -37,22 +37,25 @@ const testimonials = [
 // Leadership Data
 const leaders = [
   {
-    name: "Kevin Randrianado",
+    name: "Randrianado",
+    subname: "Kevin",
     role: "CEO et Co-Fondateur",
-    bio: "Visionnaire avec plus de 15 ans d'expérience dans la création d'identités de marque primées.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80"
+    bio: "",
+    image: undefined
   },
   {
-    name: "Herizo RAKOTOMAMPIONONA",
+    name: "RAKOTOMAMPIONONA",
+    subname : "Herizo",
     role: "CTO et Co-Fondateur",
-    bio: "Architecte full-stack obsédé par la performance et les systèmes évolutifs.",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&q=80"
+    bio: "",
+    image: undefined
   },
   {
-    name: "Onjaniana Rolland",
-    role: "COO et Co-Fondatrice",
-    bio: "Stratège axée sur les données s'assurant que chaque pixel sert un objectif commercial.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80"
+    name: "Rakotondrabe",
+    subname: "Onjaniana Rolland",
+    role: "COO et Co-Fondateur",
+    bio: "",
+    image: undefined
   }
 ];
 
@@ -120,6 +123,7 @@ const LeaderCard = ({ leader, index }: { leader: typeof leaders[0]; index: numbe
           <div className="w-full h-full flex items-center justify-center bg-muted/30 group-hover:bg-primary/5 transition-colors duration-300">
              <div className="text-center">
                <span className="text-6xl font-display text-foreground/20 group-hover:text-primary/40 transition-colors duration-300">
+                 {leader.subname.split(' ').map(n => n[0]).join('').substring(0, 1)}
                  {leader.name.split(' ').map(n => n[0]).join('').substring(0, 2)}
                </span>
              </div>
@@ -135,7 +139,7 @@ const LeaderCard = ({ leader, index }: { leader: typeof leaders[0]; index: numbe
       </div>
 
       <h3 className="text-3xl font-display uppercase tracking-wide text-foreground mb-1 group-hover:text-primary transition-colors">
-        {leader.name}
+        <span className="text-3xl font-display capitalize tracking-wide text-foreground mb-1 group-hover:text-primary transition-colors">{leader.subname}</span> {leader.name}
       </h3>
       <p className="text-primary font-bold tracking-widest uppercase text-sm mb-3">
         {leader.role}
