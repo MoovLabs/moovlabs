@@ -26,7 +26,7 @@ const Logo = ({ size = "md", animated = true }: LogoProps) => {
         whileHover: { scale: 1.05, rotate: -2 },
       })}
     >
-      <Image src="/icone-moovlabs.png" alt="Logo" width={40} height={40} />
+      <Image src="/icon-moovlabs.png" alt="Logo" width={40} height={40} />
     </Component>
   );
 };

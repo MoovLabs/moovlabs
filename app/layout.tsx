@@ -74,7 +74,7 @@ export default function RootLayout({
     '@type': 'Agency',
     name: 'Moovlabs Studio',
     url: 'https://www.moovlabs.tech',
-    logo: 'https://www.moovlabs.tech/icone-moovlabs.png',
+    logo: 'https://www.moovlabs.tech/icon-moovlabs.png',
     description: 'Agence créative spécialisée dans le developpement web et mobile',
     address: {
       '@type': 'PostalAddress',
