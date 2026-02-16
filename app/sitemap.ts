@@ -10,28 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://www.moovlabs.tech/#services',
+      url: 'https://www.moovlabs.tech',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.moovlabs.tech/#work',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.moovlabs.tech/#about',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    {
-      url: 'https://www.moovlabs.tech/#contact',
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.9,
+      priority: 1,
     },
   ]
 }
