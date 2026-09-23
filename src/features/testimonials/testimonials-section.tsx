@@ -15,6 +15,7 @@ export function TestimonialsSection({ dict, locale }: TestimonialsSectionProps) 
     <Section id="testimonials" variant="default">
       <Container>
         <SectionHeader
+          label={dict.testimonials.label}
           title={dict.testimonials.title}
           titleAccent={dict.testimonials.titleAccent}
           subtitle={dict.testimonials.subtitle}

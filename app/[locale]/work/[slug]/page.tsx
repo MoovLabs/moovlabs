@@ -9,7 +9,7 @@ import type { Locale } from "@/src/types";
 import { Container } from "@/src/components/ui/container";
 
 interface ProjectPageProps {
-  params: Promise<{ locale: Locale; slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -20,6 +20,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: ProjectPageProps) {
   const resolvedParams = await params;
+  const locale = resolvedParams.locale as Locale;
   const project = projects.find((p) => p.slug === resolvedParams.slug);
 
   if (!project) {
@@ -30,14 +31,15 @@ export async function generateMetadata({ params }: ProjectPageProps) {
 
   return {
     title: `${project.title} - Case Study`,
-    description: project.description[resolvedParams.locale],
+    description: project.description[locale],
   };
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const resolvedParams = await params;
+  const locale = resolvedParams.locale as Locale;
   const project = projects.find((p) => p.slug === resolvedParams.slug);
-  const dict = await getDictionary(resolvedParams.locale);
+  const dict = await getDictionary(locale);
 
   if (!project) {
     notFound();
@@ -47,7 +49,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <article className="pt-32 pb-24 min-h-screen">
       <Container>
         <Link 
-          href={`/${resolvedParams.locale}/#work`}
+          href={`/${locale}/#work`}
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-12 uppercase tracking-widest text-sm font-semibold"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -56,13 +58,13 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
 
         <header className="max-w-4xl mb-16">
           <p className="text-primary font-display uppercase tracking-widest mb-4">
-            {project.category[resolvedParams.locale]} — {project.year}
+            {project.category[locale]} — {project.year}
           </p>
           <h1 className="text-5xl md:text-7xl font-display font-bold uppercase tracking-tight mb-8">
             {project.title}
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-            {project.longDescription[resolvedParams.locale]}
+            {project.longDescription[locale]}
           </p>
         </header>
       </Container>
@@ -96,10 +98,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
               </div>
             </div>
             
-            {project.link && (
+            {project.url && (
               <div>
                 <a 
-                  href={project.link}
+                  href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center h-14 px-8 border-2 border-primary bg-primary text-primary-foreground font-semibold hover:bg-transparent hover:text-primary transition-all duration-300 w-full"
@@ -116,7 +118,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 {dict.work.challenge || "The Challenge"}
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                {project.content?.challenge?.[resolvedParams.locale] || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
+                {project.challenge?.[locale] || "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."}
               </p>
             </section>
             
@@ -125,7 +127,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 {dict.work.solution || "Our Solution"}
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                {project.content?.solution?.[resolvedParams.locale] || "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+                {project.solution?.[locale] || "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
               </p>
             </section>
 
@@ -134,7 +136,7 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 {dict.work.result || "The Result"}
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                {project.content?.result?.[resolvedParams.locale] || "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."}
+                {project.result?.[locale] || "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."}
               </p>
             </section>
           </div>

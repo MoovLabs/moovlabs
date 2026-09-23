@@ -15,9 +15,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }) {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.locale);
+  const locale = resolvedParams.locale as Locale;
+  const dict = await getDictionary(locale);
   return {
     title: {
       template: `%s | ${dict.metadata.title}`,
@@ -33,19 +34,20 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }>) {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.locale);
+  const locale = resolvedParams.locale as Locale;
+  const dict = await getDictionary(locale);
 
   return (
-    <html lang={resolvedParams.locale} className="dark">
+    <html lang={locale} className="dark">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header locale={resolvedParams.locale} dict={dict} />
+        <Header locale={locale} dict={dict} />
         <main className="min-h-screen">
           {children}
         </main>
-        <Footer locale={resolvedParams.locale} dict={dict} />
+        <Footer locale={locale} dict={dict} />
       </body>
     </html>
   );

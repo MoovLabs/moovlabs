@@ -12,11 +12,12 @@ import { ContactSection } from "@/src/features/contact/contact-section";
 import { FinalCtaSection } from "@/src/features/cta/final-cta-section";
 
 interface HomePageProps {
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }
 
 export default async function HomePage({ params }: HomePageProps) {
-  const { locale } = await params;
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale as Locale;
   const dict = await getDictionary(locale);
 
   return (

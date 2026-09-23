@@ -6,12 +6,13 @@ import { projects } from "@/src/data/projects";
 import { SectionHeader } from "@/src/components/ui/section-header";
 
 interface WorkPageProps {
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 }
 
 export async function generateMetadata({ params }: WorkPageProps) {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.locale);
+  const locale = resolvedParams.locale as Locale;
+  const dict = await getDictionary(locale);
   return {
     title: `${dict.work.title} - Moovlabs`,
     description: dict.work.label,
@@ -20,7 +21,8 @@ export async function generateMetadata({ params }: WorkPageProps) {
 
 export default async function WorkPage({ params }: WorkPageProps) {
   const resolvedParams = await params;
-  const dict = await getDictionary(resolvedParams.locale);
+  const locale = resolvedParams.locale as Locale;
+  const dict = await getDictionary(locale);
 
   return (
     <div className="pt-32 pb-24 min-h-screen">
@@ -39,7 +41,7 @@ export default async function WorkPage({ params }: WorkPageProps) {
             <ProjectCard
               key={project.id}
               project={project}
-              locale={resolvedParams.locale}
+              locale={locale}
               index={index}
             />
           ))}
