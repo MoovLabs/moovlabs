@@ -1,7 +1,7 @@
 export const SITE_CONFIG = {
   name: 'Moovlabs',
   fullName: 'Moovlabs Studio',
-  url: 'https://www.moovlabs.tech',
+  url: process.env.NEXT_PUBLIC_SITE_URL || 'https://www.moovlabs.tech',
   email: 'hello@moovlabs.tech',
   phone: '+261 37 50 146 26',
   address: 'Antananarivo, Madagascar',
