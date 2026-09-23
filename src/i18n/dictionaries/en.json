@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "Moovlabs Studio — Creative Digital Studio",
+    "description": "Moovlabs is a creative digital studio specializing in branding, web & mobile development, and digital content creation.",
+    "keywords": "web agency, mobile application, website, branding, UI/UX, development, digital studio, Madagascar, Antananarivo"
+  },
+  "nav": {
+    "work": "Work",
+    "services": "Services",
+    "studio": "Studio",
+    "insights": "Insights",
+    "contact": "Contact",
+    "startProject": "Start a project"
+  },
+  "hero": {
+    "tagline": "Creative Digital Studio",
+    "headline1": "WE BUILD",
+    "headline2": "BRANDS.",
+    "headline3": "DIGITAL PRODUCTS.",
+    "headline4": "EXPERIENCES.",
+    "subtitle": "We are a creative studio specializing in brand identity creation, digital product development, and content production that leaves a lasting impression.",
+    "cta1": "View our work",
+    "cta2": "Start a project",
+    "scroll": "Scroll"
+  },
+  "stats": {
+    "projects": "Projects",
+    "clients": "Clients",
+    "years": "Years",
+    "passion": "Passion"
+  },
+  "work": {
+    "label": "Selected work",
+    "title": "OUR",
+    "titleAccent": "WORK",
+    "viewAll": "View all projects",
+    "viewProject": "View project",
+    "challenge": "The Challenge",
+    "solution": "Our Solution",
+    "result": "The Result",
+    "technologies": "Technologies",
+    "overview": "Project Overview",
+    "backToWork": "Back to work"
+  },
+  "services": {
+    "label": "What we do",
+    "title": "OUR",
+    "titleAccent": "SERVICES",
+    "subtitle": "From concept to launch, we deliver complete solutions that transform ideas into remarkable digital experiences.",
+    "learnMore": "Learn more",
+    "digital": {
+      "title": "Digital",
+      "description": "We design and develop high-performance, intuitive digital products."
+    },
+    "brand": {
+      "title": "Brand",
+      "description": "We create memorable and consistent brand identities."
+    },
+    "content": {
+      "title": "Content",
+      "description": "We produce creative content that engages and converts."
+    }
+  },
+  "process": {
+    "label": "Our approach",
+    "title": "OUR",
+    "titleAccent": "PROCESS",
+    "steps": {
+      "discover": {
+        "title": "DISCOVER",
+        "description": "Understand the problem, objectives, and your audience's needs."
+      },
+      "define": {
+        "title": "DEFINE",
+        "description": "Define the strategy, architecture, and user journeys."
+      },
+      "design": {
+        "title": "DESIGN",
+        "description": "Create the visual experience and user interfaces."
+      },
+      "build": {
+        "title": "BUILD",
+        "description": "Develop the product with modern, performant technologies."
+      },
+      "launch": {
+        "title": "LAUNCH",
+        "description": "Launch, measure, and continuously improve."
+      }
+    }
+  },
+  "studio": {
+    "label": "About",
+    "title": "WE ARE",
+    "titleAccent": "MOOVLABS",
+    "description1": "We are a team of designers, developers, and strategists who believe that great design has the power to transform businesses.",
+    "description2": "Founded with a passion for bold creativity, we combine art and technology to deliver solutions that are not just visually stunning — they drive real, measurable results.",
+    "quote": "WE DON'T JUST BUILD WEBSITES. WE CRAFT EXPERIENCES THAT LEAVE A LASTING IMPRESSION.",
+    "valuesTitle": "Our Values",
+    "values": {
+      "bold": {
+        "title": "Bold",
+        "description": "We push boundaries and challenge conventions."
+      },
+      "authentic": {
+        "title": "Authentic",
+        "description": "We stay true to each brand's unique voice."
+      },
+      "precise": {
+        "title": "Precise",
+        "description": "Every pixel, every detail matters to us."
+      },
+      "human": {
+        "title": "Human",
+        "description": "We design for real people, not metrics."
+      }
+    },
+    "teamTitle": "The Team",
+    "teamSubtitle": "A collective of creative strategists and technical experts dedicated to pushing the boundaries of digital.",
+    "techTitle": "Built with modern technology.",
+    "techSubtitle": "We use the most modern technologies to build performant and scalable products."
+  },
+  "testimonials": {
+    "title": "CLIENT",
+    "titleAccent": "STORIES",
+    "subtitle": "Don't take our word for it. Hear from the visionaries we've had the privilege to collaborate with.",
+    "comingSoon": "Testimonials coming soon."
+  },
+  "faq": {
+    "label": "Q&A",
+    "title": "FREQUENTLY",
+    "titleAccent": "ASKED"
+  },
+  "cta": {
+    "headline1": "HAVE AN IDEA?",
+    "headline2": "LET'S BUILD IT.",
+    "cta1": "Start a project",
+    "cta2": "Let's talk"
+  },
+  "contact": {
+    "label": "Get in touch",
+    "title": "LET'S CREATE",
+    "titleAccent": "TOGETHER",
+    "subtitle": "Have a project in mind? We'd love to hear about it. Write to us and let's build something extraordinary.",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@example.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "projectType": "Project Type",
+      "projectTypePlaceholder": "Select a project type",
+      "budget": "Estimated Budget",
+      "budgetPlaceholder": "Select a range",
+      "message": "Your Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "An error occurred. Please try again."
+    },
+    "projectTypes": {
+      "branding": "Brand Identity",
+      "web": "Web Development",
+      "mobile": "Mobile Application",
+      "ecommerce": "E-commerce",
+      "content": "Content Creation",
+      "other": "Other"
+    },
+    "budgetRanges": {
+      "small": "< $2,000",
+      "medium": "$2,000 - $5,000",
+      "large": "$5,000 - $15,000",
+      "enterprise": "$15,000+",
+      "discuss": "Let's discuss"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "followUs": "Follow us"
+    }
+  },
+  "footer": {
+    "tagline": "We create bold digital experiences that transform brands and drive results.",
+    "navigation": "Navigation",
+    "social": "Social",
+    "startProject": "Start a Project",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  }
+}

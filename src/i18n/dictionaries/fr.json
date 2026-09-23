@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "title": "Moovlabs Studio — Creative Digital Studio",
+    "description": "Moovlabs est un studio créatif digital spécialisé dans le branding, le développement web & mobile et la création de contenu digital.",
+    "keywords": "agence web, application mobile, site web, branding, UI/UX, développement, studio digital, Madagascar, Antananarivo"
+  },
+  "nav": {
+    "work": "Projets",
+    "services": "Services",
+    "studio": "Studio",
+    "insights": "Insights",
+    "contact": "Contact",
+    "startProject": "Démarrer un projet"
+  },
+  "hero": {
+    "tagline": "Creative Digital Studio",
+    "headline1": "NOUS CRÉONS",
+    "headline2": "DES MARQUES.",
+    "headline3": "DES PRODUITS DIGITAUX.",
+    "headline4": "DES EXPÉRIENCES.",
+    "subtitle": "Nous sommes un studio créatif spécialisé dans la création d'identités de marque, le développement de produits digitaux et la production de contenu qui marquent les esprits.",
+    "cta1": "Voir nos projets",
+    "cta2": "Démarrer un projet",
+    "scroll": "Défiler"
+  },
+  "stats": {
+    "projects": "Projets",
+    "clients": "Clients",
+    "years": "Années",
+    "passion": "Passion"
+  },
+  "work": {
+    "label": "Projets sélectionnés",
+    "title": "NOS",
+    "titleAccent": "RÉALISATIONS",
+    "viewAll": "Voir tous les projets",
+    "viewProject": "Voir le projet",
+    "challenge": "Le Défi",
+    "solution": "Notre Solution",
+    "result": "Le Résultat",
+    "technologies": "Technologies",
+    "overview": "Aperçu du projet",
+    "backToWork": "Retour aux projets"
+  },
+  "services": {
+    "label": "Ce que nous faisons",
+    "title": "NOS",
+    "titleAccent": "SERVICES",
+    "subtitle": "Du concept au lancement, nous fournissons des solutions complètes qui transforment les idées en expériences digitales remarquables.",
+    "learnMore": "En savoir plus",
+    "digital": {
+      "title": "Digital",
+      "description": "Nous concevons et développons des produits digitaux performants et intuitifs."
+    },
+    "brand": {
+      "title": "Brand",
+      "description": "Nous créons des identités de marque mémorables et cohérentes."
+    },
+    "content": {
+      "title": "Content",
+      "description": "Nous produisons du contenu créatif qui engage et convertit."
+    }
+  },
+  "process": {
+    "label": "Notre approche",
+    "title": "NOTRE",
+    "titleAccent": "PROCESSUS",
+    "steps": {
+      "discover": {
+        "title": "DISCOVER",
+        "description": "Comprendre le problème, les objectifs et les besoins de votre audience."
+      },
+      "define": {
+        "title": "DEFINE",
+        "description": "Définir la stratégie, l'architecture et les parcours utilisateurs."
+      },
+      "design": {
+        "title": "DESIGN",
+        "description": "Créer l'expérience visuelle et les interfaces utilisateur."
+      },
+      "build": {
+        "title": "BUILD",
+        "description": "Développer le produit avec des technologies modernes et performantes."
+      },
+      "launch": {
+        "title": "LAUNCH",
+        "description": "Lancer, mesurer et améliorer continuellement."
+      }
+    }
+  },
+  "studio": {
+    "label": "À propos",
+    "title": "NOUS SOMMES",
+    "titleAccent": "MOOVLABS",
+    "description1": "Nous sommes une équipe de designers, développeurs et stratèges qui croient que le bon design a le pouvoir de transformer les entreprises.",
+    "description2": "Fondés avec une passion pour la créativité audacieuse, nous combinons art et technologie pour livrer des solutions qui ne sont pas seulement superbes — elles génèrent des résultats réels et mesurables.",
+    "quote": "NOUS NE CRÉONS PAS JUSTE DES SITES WEB. NOUS FAÇONNONS DES EXPÉRIENCES QUI LAISSENT UNE IMPRESSION DURABLE.",
+    "valuesTitle": "Nos Valeurs",
+    "values": {
+      "bold": {
+        "title": "Audacieux",
+        "description": "Nous repoussons les limites et défions les conventions."
+      },
+      "authentic": {
+        "title": "Authentique",
+        "description": "Nous restons fidèles à la voix unique de chaque marque."
+      },
+      "precise": {
+        "title": "Précis",
+        "description": "Chaque pixel, chaque détail compte pour nous."
+      },
+      "human": {
+        "title": "Humain",
+        "description": "Nous concevons pour de vraies personnes, pas des métriques."
+      }
+    },
+    "teamTitle": "L'Équipe",
+    "teamSubtitle": "Un collectif de stratèges créatifs et d'experts techniques dédiés à repousser les limites du digital.",
+    "techTitle": "Built with modern technology.",
+    "techSubtitle": "Nous utilisons les technologies les plus modernes pour construire des produits performants et scalables."
+  },
+  "testimonials": {
+    "title": "HISTOIRES",
+    "titleAccent": "CLIENTS",
+    "subtitle": "Ne nous croyez pas sur parole. Écoutez les visionnaires avec qui nous avons eu le privilège de collaborer.",
+    "comingSoon": "Témoignages bientôt disponibles."
+  },
+  "faq": {
+    "label": "Q&A",
+    "title": "QUESTIONS",
+    "titleAccent": "FRÉQUENTES"
+  },
+  "cta": {
+    "headline1": "UNE IDÉE ?",
+    "headline2": "CONSTRUISONS-LA ENSEMBLE.",
+    "cta1": "Démarrer un projet",
+    "cta2": "Discutons"
+  },
+  "contact": {
+    "label": "Contactez-nous",
+    "title": "CRÉONS",
+    "titleAccent": "ENSEMBLE",
+    "subtitle": "Vous avez un projet en tête ? Nous adorerions en entendre parler. Écrivez-nous et construisons quelque chose d'extraordinaire.",
+    "form": {
+      "name": "Votre Nom",
+      "namePlaceholder": "Jean Dupont",
+      "email": "Adresse Email",
+      "emailPlaceholder": "jean@example.com",
+      "company": "Entreprise",
+      "companyPlaceholder": "Votre entreprise",
+      "projectType": "Type de Projet",
+      "projectTypePlaceholder": "Sélectionnez un type de projet",
+      "budget": "Budget Estimé",
+      "budgetPlaceholder": "Sélectionnez une fourchette",
+      "message": "Votre Message",
+      "messagePlaceholder": "Parlez-nous de votre projet...",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Une erreur est survenue. Veuillez réessayer."
+    },
+    "projectTypes": {
+      "branding": "Identité de Marque",
+      "web": "Développement Web",
+      "mobile": "Application Mobile",
+      "ecommerce": "E-commerce",
+      "content": "Création de Contenu",
+      "other": "Autre"
+    },
+    "budgetRanges": {
+      "small": "< 2 000 €",
+      "medium": "2 000 € - 5 000 €",
+      "large": "5 000 € - 15 000 €",
+      "enterprise": "15 000 € +",
+      "discuss": "À discuter"
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "address": "Adresse",
+      "followUs": "Suivez-nous"
+    }
+  },
+  "footer": {
+    "tagline": "Nous créons des expériences digitales audacieuses qui transforment les marques et génèrent des résultats.",
+    "navigation": "Navigation",
+    "social": "Réseaux",
+    "startProject": "Démarrer un Projet",
+    "privacy": "Politique de Confidentialité",
+    "terms": "Conditions d'Utilisation",
+    "rights": "Tous droits réservés."
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page introuvable",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "backHome": "Retour à l'accueil"
+  }
+}
